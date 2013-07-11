@@ -1,0 +1,49 @@
+#nop See README.tt for details about specific bits of these tintin++ configs
+
+#CONFIG           {AUTO TAB}  {5000}
+#CONFIG           {BUFFER SIZE}  {20000}
+#CONFIG           {COMMAND COLOR}  {<078>}
+#CONFIG           {COMMAND ECHO}  {ON}
+#CONFIG           {CONNECT RETRY}  {15}
+#CONFIG           {HISTORY SIZE}  {1000}
+#CONFIG           {LOG}  {RAW}
+#CONFIG           {PACKET PATCH}  {0.00}
+#CONFIG           {REPEAT CHAR}  {!}
+#CONFIG           {REPEAT ENTER}  {OFF}
+#CONFIG           {SCROLL LOCK}  {ON}
+#CONFIG           {SPEEDWALK}  {ON}
+#CONFIG           {TINTIN CHAR}  {#}
+#CONFIG           {VERBATIM}  {OFF}
+#CONFIG           {VERBATIM CHAR}  {\}
+#CONFIG           {VERBOSE}  {OFF}
+#CONFIG           {WORDWRAP}  {ON}
+
+
+#nop #GAG              {The weave is now tied.}
+#PATHDIR          {d}  {u}  {32}
+#PATHDIR          {e}  {w}  {2}
+#PATHDIR          {n}  {s}  {1}
+#PATHDIR          {ne}  {sw}  {3}
+#PATHDIR          {nw}  {se}  {9}
+#PATHDIR          {s}  {n}  {4}
+#PATHDIR          {se}  {nw}  {6}
+#PATHDIR          {sw}  {ne}  {12}
+#PATHDIR          {u}  {d}  {16}
+#PATHDIR          {w}  {e}  {8}
+#TICKER           {keepalive} {#cr} {600}
+#VARIABLE         {%t}  {:10}
+#VARIABLE         {stamp}  {23:32}
+#VARIABLE         {ttrc}  {~/.tintin/tt.rc}
+#VARIABLE         {connrc} {~/.tintin/tt-connections.rc}
+#VARIABLE         {actionrc} {~/.tintin/tt-action.rc}
+#VARIABLE         {aliasrc} {~/.tintin/tt-alias.rc}
+#VARIABLE         {capturerc} {~/.tintin/tt-capture.rc}
+#VARIABLE         {log}  {~/logs/tt.log}
+#VARIABLE         {urllog} {~/logs/tturl.log}
+
+#nop Read connection file
+#READ $connrc
+#READ $aliasrc
+#READ $actionrc
+#READ $capturerc
+

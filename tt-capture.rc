@@ -1,0 +1,250 @@
+
+#ACTION {%1 tells the group %2}
+{
+    getstamp;
+    #line log {$log}{$stamp %1 [gt] %2};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#action {%1 (e)$}
+{
+    getstamp;
+    #line log {$log}{$stamp [emote] %1};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {%1--logins--> %2 has joined the game via telnet. %3}
+{
+    #if {"%2" == "Kazlan"}{#system espeak -s 120 "Kazlan is the goddamned Batman."}{#nop};
+    #if {"%2" == "Wyrd"}{#system espeak -s 120 "Weird, you're on twice."}{#nop};
+    #if {"%2" == "Sedna"}{#system espeak -s 120 "What a woman.";at sedna goose sedna}{#nop};
+    getstamp;
+    #line log {$log} {$stamp %2 login: %3};
+    notify;
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {[%1](%2)(%3) %4: %5}
+{
+    getstamp;
+    #line log {$log} {$stamp %4 [%1] %5};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {[HELPERS] %1: %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 [HLP] %2};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {[Spoiler][%1] %2: %3}
+{
+    getstamp;
+    #line log {$log} {$stamp %2 [SPLR][%1] %3};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {%1 says oocly %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 osay: %2};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {<%1 OOC>: %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 OOC: %2};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {You say oocly %1}
+{
+    getstamp;
+    #line log {$log} {$stamp You osay: %1};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1 %2Admin%3: %4}
+{
+    {#if {"^%4" != "Notes"}
+        getstamp;
+        #line log {$log}{$stamp %1 -Admin- %4};
+        notify
+    }
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1 -admin- %2}
+{
+    getstamp;
+    #line log {$log}{$stamp %1 -admin- %2};
+    notify;
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1 -immtalk- %2}
+{
+    getstamp;
+    #line log {$log}{$stamp %1 -immt- %2};
+    notify;
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1 OOC: %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 [OOC] %2};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1 prays %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 [pray] %2};
+    notify;
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1 replies %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 [tell] %2};
+    notify;
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1 replies, %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 [tell] %2};
+    notify;
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1 say oocly, %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 [osay] %2};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1 says oocly %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 osay: %2};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1 says oocly, %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 [osay] %2};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1 tells you %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 [tell] %2};
+    notify;
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1 tells you, %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 [tell] %2};
+    notify;
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^You tell %1 %2}
+{
+    getstamp;
+    #line log {$log}{$stamp You -tell- %1 %2};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^You reply to %1 %2}
+{
+    getstamp;
+    #line log {$log}{$stamp You -tell- %1 %2};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1 voice from the heavens booms all around you, saying, %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 [pray] %2};
+    notify;
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^%1's voice booms from the heavens all around %2, saying, %3}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 [pray][%2] %3};
+    notify;
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^-Imm- %1: %2}
+{
+    getstamp;
+    #line log {$log}{$stamp %1 -Imm- %2};
+    notify;
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^<%1 OOC>: %2}
+{
+    getstamp;
+    #line log {$log} {$stamp %1 OOC: %2};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+
+#ACTION {^You say oocly %1}
+{
+    getstamp;
+    #line log {$log} {$stamp You osay: %1};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}
+
+#ACTION {^[%D] %2: %3}
+{
+    getstamp;
+    #line log {$log} {$stamp %2 [%1] %3};
+    #system sh ~/.tintin/pullurl.sh
+}
+{5}

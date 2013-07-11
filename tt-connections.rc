@@ -1,0 +1,52 @@
+#ALIAS {aspen}
+{
+	#session aspen crankysg.com 5000
+}
+{5}
+
+#ALIAS {aspen-delwin}
+{
+	#session aspen-NAME crankysg.com 5000;
+	NAME;
+	PASSWORD;
+	;
+	;
+	
+}
+{5}
+
+#ALIAS {r3-anti}
+{
+	#session r3-anti antitech.org 9000;
+		
+}
+{5}
+
+#ALIAS {tls}
+{
+	#session tls thelastsunrise.net 9000;
+	y
+}
+{5}
+
+#ALIAS {tls-mahnmut}
+{
+	#session tls-NAME thelastsunrise.net 9000;
+	y;
+	NAME;
+	PASSWORD;
+	;
+	;
+}
+{5}
+
+#nop Below this line are commands to automatically connect
+#nop to muds, etc. Just enter commands as you would if you 
+#nop connecting and typing manually.
+
+
+tls-NAME
+who
+note scan
+
+

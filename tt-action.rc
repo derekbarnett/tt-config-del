@@ -1,0 +1,275 @@
+
+#ACTION {^You are hungry.$}
+{
+    eat pie;
+    drink bottle;
+    drink bottle
+}
+{5}
+
+#ACTION {^%1 spits in your eye!$}
+{
+    flush
+}
+{5}
+
+#ACTION {^%1 socks you in the nose!$}
+{
+    flush
+}
+{5}
+
+#ACTION {^You are thirsty.$}
+{
+    drink bottle;
+    drink bottle
+}
+{5}
+
+#ACTION {A deep wooden well.$}
+{
+    fill canteen;
+    fill 2.canteen
+}
+{5}
+
+#ACTION {a ripe apple is laying here on the ground$}
+{
+    get apple
+}
+{5}
+
+#ACTION {a purple fungus is growing here$}
+{
+    get special
+}
+{5}
+
+#ACTION {a strange fungus is growing here}
+{
+    get strange;
+    get pitted
+}
+{5}
+
+#ACTION {a white marble fountain$}
+{
+    fill canteen;
+    fill 2.canteen;
+}
+{5}
+
+#ACTION {A white marble fountain$}
+{
+    fill canteen;
+    fill 2.canteen
+}
+{5}
+#ACTION {^You feel like you forgot something maybe you should study again.$}
+{
+    ancient
+}
+{5}
+
+
+#ACTION {^You search your memory but find nothing.$}
+{
+    ancient
+}
+{5}
+
+#ACTION {^You no longer feel stealthy.$}
+{
+    sneak;
+    sneak;
+    sneak;
+    sneak;
+    sneak;
+    sneak;
+    sneak;
+    sneak;
+    sneak;
+    sneak;
+    sneak
+}
+{5}
+
+
+#ACTION {^You failed to put the Flame into the Void.$}
+{
+    flamevoid
+}
+{5}
+
+
+
+#ACTION {^The Void flickers and fades as emotions break through.$}
+{
+    flamevoid
+}
+{5}
+
+
+
+#ACTION {^The Creator's grace wavers with you.$}
+{
+    divine
+}
+{5}
+
+#ACTION {^You fail to establish a state of grace.$}
+{
+    divine
+}
+{5}
+
+#ACTION {^The beating of your heart stops racing and you stop seeing red.$}
+{
+    rage
+}
+{5}
+
+#ACTION {^You turn a little green but not enough there HULK.$}
+{
+    rage
+}
+{5}
+
+#ACTION {^The beating of your heart stops racing and you stop seeing clearly.$}
+{
+    precision
+}
+{5}
+
+#ACTION {^You just can't seem to find the zone.$}
+{
+    precision
+}
+{5}
+
+#ACTION {^The Creator's protection fades.$}
+{
+    sunburst
+}
+{5}
+
+#ACTION {^The protection of the Creator fades.$}
+{
+    sunburst
+}
+{5}
+
+#ACTION {^The Creator does not grant you favor.$}
+{
+    sunburst
+}
+{5}
+
+#ACTION {^You feel your middle going pudgy! Oh No!!$}
+{
+    fortitude
+}
+{5}
+
+#ACTION {^You just can't seem to get into shape.$}
+{
+    fortitude
+}
+{5}
+
+
+#ACTION {^You feel your pulse slow down.$}
+{
+    quickness
+}
+{5}
+
+
+
+#ACTION {^You try to move faster, but nothing happens.$}
+{
+    quickness
+}
+{5}
+
+
+#ACTION {^Your muscles feel like jello.$}
+{
+    brute
+}
+{5}
+
+#ACTION {^The creaking of your bones stop as your muscles relax.$}
+{
+    brute
+}
+{5}
+
+#ACTION {^You fail to poison a}
+{
+    poison sword
+}
+{5}
+
+#ACTION {^The poison on the weapon you coated}
+{
+    poison sword
+}
+{5}
+
+#ACTION {you sprawling}
+{
+    stand
+}
+{5}
+
+
+#ACTION {^You are hungry.$}
+{
+    eat pie;
+    dr bottle;
+    dr bottle
+}
+{5}
+
+#ACTION {%1 spits in your eye!$}
+{
+    flush
+}
+{5}
+
+#ACTION {sends you flying}
+{
+    wake
+}
+{5}
+
+#ACTION {trips you}
+{
+    wake
+}
+{5}
+
+#ACTION {fall flat on your}
+{
+    wake
+}
+{5}
+
+#ACTION {does a jumping spin kick to your chest!$}
+{
+    wake
+}
+{5}
+
+#ACTION {places a solid blow to your solar plexus, knocking the wind out of you.$}
+{
+    wake
+}
+{5}
+
+#TICKER {retie}
+{
+    tie all self
+}
+{900}

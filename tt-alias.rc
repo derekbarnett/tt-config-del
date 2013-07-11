@@ -1,0 +1,218 @@
+
+#ALIAS {fc}
+{
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde;
+    first clyde
+}
+{5}
+
+#ALIAS {recl}
+{
+    dismount;
+    flush clyde;
+    order clyde submit korvin;
+    execute clyde;
+    blow
+}
+{5}
+
+#ALIAS {qm}
+{
+    7w;
+    enter;
+    ride w;
+    ride n;
+    ride w;
+    ride w;
+    3s2w;
+    enter
+}
+{5}
+
+#ALIAS {tlsmahnprompt}
+{
+    #prompt {TLS Mahn %1 == %2 == %3 (%4) (%5)} {<110>TLS <070>M<140>a<260>h<100>n <110>%1 <070>== <060>%2 <070>== <220>%3}
+}
+{5}
+
+#ALIAS {getstamp}
+{
+    #format {stamp}{%t} {%Y%m%d %H:%M}
+}
+{5}
+
+#ALIAS {ioc %1}
+{
+    ooc `5%1`^
+}
+{5}
+
+#ALIAS {logbreak}
+{
+    getstamp;
+    #line log {$log} {################BREAK $stamp##############}
+}
+{5}
+
+#ALIAS {newbcanteen}
+{
+    load obj 116;
+    dumpout wine;
+    string obj wine name tls canteen;
+    string obj tls short `^a `2leather`^ canteen with `8T`0L`7S`^ carved on the side`^;
+    string obj tls long `^a `2leather`^ canteen with `8T`0L`7s`^ carved in the side`^;
+    fill tls
+}
+{5}
+
+#ALIAS {notify}
+{
+    #system notify-send --urgency=critical MUD "`tail -1 $log`"
+}
+{5}
+
+#ALIAS {ff}
+{
+    #system xdg-open "`tail -1 $urllog`"
+}
+{5}
+
+#ALIAS {/ff}
+{
+    #system xdg-open "`tail -1 $urllog`"
+}
+{5}
+
+#ALIAS {reloadconfig}
+{
+    #read {$ttrc}
+}
+{5}
+
+#ALIAS {saveconfig}
+{
+    #write {$ttrc}
+}
+{5}
+
+#ALIAS {b}
+{
+    bash
+}
+{5}
+
+#ALIAS {as}
+{
+    assassinate %1;
+    bash
+}
+{5}
+
+#ALIAS {cv}
+{
+    cast 'soul barb' 'water spray' 'soul barb' %1;
+    release
+}
+{5}
+
+#ALIAS {sb}
+{
+    cast 'soul barb' %1;
+    release
+}
+{5}
+
+#MACRO {\eOq}
+{
+    withdraw south
+}
+
+#MACRO {\eOr}
+{
+    south
+}
+
+#MACRO {\eOs}
+{
+    withdraw east
+}
+
+#MACRO {\eOt}
+{
+    west
+}
+
+#MACRO {\eOu}
+{
+    look
+}
+
+#MACRO {\eOv}
+{
+    east
+}
+
+#MACRO {\eOw}
+{
+    withdraw west
+}
+
+#MACRO {\eOx}
+{
+    north
+}
+
+#MACRO {\eOy}
+{
+    withdraw north
+}
+
+#MACRO {\eOo}
+{
+    down
+}
+
+#MACRO {\eOj}
+{
+    up
+}
+
+#MACRO {\eOn}
+{
+    enter
+}
+
+#MACRO {\eOp}
+{
+    KA0
+}
+
+#MACRO {\eOm}
+{
+    KAM
+}
+
+#MACRO {\eOk}
+{
+    KAP
+}
+
+#MACRO {\eOM}
+{
+    KAE
+}
