@@ -15,13 +15,6 @@
 }
 {5}
 
-#ALIAS {r3-anti}
-{
-	#session r3-anti antitech.org 9000;
-		
-}
-{5}
-
 #ALIAS {tls}
 {
 	#session tls thelastsunrise.net 9000;
@@ -37,6 +30,20 @@
 	PASSWORD;
 	;
 	;
+}
+{5}
+
+#ALIAS {tls-testmahn}
+{
+	#session tls-NAME thelastsunrise.net 9900;
+	y;
+	NAME;
+	PASSWORD;
+	y;
+	y;
+	y;
+	l;
+	#class immcomm read /home/delwin/.tintin/immclass.tin
 }
 {5}
 

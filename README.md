@@ -9,7 +9,7 @@ GENERAL SETUP:
 I put these config files and the tturl script in ~/.tintin
 and my log files in ~/logs/tt.log and ~/logs/tturl.log. If
 you wish to use different pathnames, change the variables
-referencing these locations in tt.rc.
+referencing these locations in tt.rc. 
 
 tt.rc is the base config file which contains various variable
 definitions and loads the other config files. tt-alias.rc and
@@ -21,7 +21,9 @@ just dumped into one big file. If you like, you can have your
 individual mud aliases load mud specific config files by
 adding:
 #read configfile.rc;
-into the alias definitions.
+into the alias definitions. The immclass.tin file
+is included to demonstrate how you might create and
+load a connection specific config file.
 
 The short version of the steps to set this up like I have it:
 git clone <whatever the address to this ends up being>

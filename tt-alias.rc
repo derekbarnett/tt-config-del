@@ -1,3 +1,15 @@
+#ALIAS {ls}
+{
+    look
+}
+{5}
+
+#ALIAS {tailurl}
+{
+    #system {tail -10 ~/logs/tturl.log}
+}
+{5}
+
 #ALIAS {fc}
 {
     first clyde;
@@ -87,25 +99,19 @@
 
 #ALIAS {ff}
 {
-    #system xdg-open "`tail -1 $urllog`"
+    #system {xdg-open "`tail -1 $urllog`"}
 }
 {5}
 
 #ALIAS {/ff}
 {
-    #system xdg-open "`tail -1 $urllog`"
+    #system {xdg-open "`tail -1 $urllog`"}
 }
 {5}
 
 #ALIAS {reloadconfig}
 {
     #read {$ttrc}
-}
-{5}
-
-#ALIAS {saveconfig}
-{
-    #write {$ttrc}
 }
 {5}
 

@@ -1,0 +1,8 @@
+#ACTION {%1 OOC: 'peace please'}{at %1 peace;restore all}{5}
+#ACTION {%1 OOC: 'restore please'}{restore all}{5}
+#ACTION {%1 OOC: 'gems please'}{immmine gem;at %1 drop all.gem}{5}
+#ACTION {%1 OOC: 'gold please'}{immmine gold;at %1 give 10000000 gold %1}{5}
+#ACTION {%1 OOC: 'leather please'}{immmine leather;at %1 drop all.cured}{5}
+#ACTION {%1 OOC: 'ore please'}{immmine ore;at %1 drop all.ore}{5}
+#ACTION {%1 OOC: 'qp please'}{bonus %1 qp 5000;bonus %1 qp 5000}{5}
+#ACTION {%1 OOC: 'removeaff please'}{removeaff %1}{5}
