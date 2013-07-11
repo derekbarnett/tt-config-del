@@ -71,5 +71,11 @@ by default (at least if you did any sort of desktop install,)
 but you can check 'which xdg-open' to see whether you have it
 installed. If you don't wish to use this, remove the line:
 '#system sh ~/.tintin/pullurl.sh' from the various action definitions
-in tt-capture.rc.
+in tt-capture.rc. NOTE: You will need to have your browser open
+before using the /ff shortcut to open a url, else it will take over
+the terminal you are running tintin++ under until the browser is
+closed. If there is already a browser running, you shouldn't have
+this issue -- at least with firefox (I haven't tested this with
+other browsers yet.)
+
 
