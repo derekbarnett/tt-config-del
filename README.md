@@ -1,7 +1,8 @@
 These are my tintin++ configs and will need a bit of editing
 to be fully useful to anyone else. In particular, you will
 need to edit tt.rc and change the directory paths as well as
-the mud connection details in tt-connections.rc.
+the mud connection details in tt-connections.rc. You will need
+to change any '~' to the actual pathname of your home directory.
 
 GENERAL SETUP:
 

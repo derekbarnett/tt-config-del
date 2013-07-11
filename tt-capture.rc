@@ -1,4 +1,3 @@
-
 #ACTION {%1 tells the group %2}
 {
     getstamp;
