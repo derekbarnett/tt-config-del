@@ -41,9 +41,8 @@
 #VARIABLE         {log}  {~/logs/tt.log}
 #VARIABLE         {urllog} {~/logs/tturl.log}
 
-#nop Read connection file
-#READ $connrc
+#nop Read connection file last so other definitions load
 #READ $aliasrc
 #READ $actionrc
 #READ $capturerc
-
+#READ $connrc
