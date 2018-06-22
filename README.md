@@ -78,4 +78,3 @@ closed. If there is already a browser running, you shouldn't have
 this issue -- at least with firefox (I haven't tested this with
 other browsers yet.)
 
-
